@@ -1,0 +1,15 @@
+{
+  "restartable": "rs",
+  "verbose": false,
+  "env": {
+      "NODE_ENV": "development",
+      "PORT": "8081" 
+  },
+  "execMap": {
+      "": "node --harmony", 
+      "js": "node --harmony"
+  },
+  "watch": [ "routes/", "views/", "app.js"],
+  "ignore": ["node_modules", "views/"],
+  "ext": "js"
+}
