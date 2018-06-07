@@ -16,7 +16,7 @@
     "ignore_watch": [
       "node_modules",
       "log",
-      "public",
+      "public"
     ],
     "error_file" : "log/app-err.log",
     "out_file"   : "log/app-out.log"
