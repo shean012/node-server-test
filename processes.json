@@ -1,0 +1,26 @@
+{
+  "apps": [
+    {
+      "name": "node_app",
+      "cwd": "/Docker/node-server-test",
+      "script": "bin/www",
+      "log_date_format": "YYYY-MM-DD HH:mm Z",
+      "error_file": "log/app-err.log",
+      "out_file": "log/app-out.log",
+      "watch": [
+        "bin",
+        "controllers",
+        "routes",
+        "app.js",
+        "index.js"
+      ],
+      "ignore_watch": [
+        "node_modules",
+        "log",
+        "public"
+      ],
+      "exec_mode": "fork",
+      "autorestart": true
+    }
+  ]
+}
