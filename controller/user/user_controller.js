@@ -15,7 +15,7 @@ export const created = async (req, res, next) => {
   return res.send(user)
 }
 
-export const getById = async () => {
+export const getById = async (req, res, next) => {
   let uid = req.params.uid
   let user = await Model.User.findById(uid)
   if (!user) return next(403, '用户不存在')
